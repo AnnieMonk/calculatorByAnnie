@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator by Annie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="digitron.css" />
+    <link href="https://fonts.googleapis.com/css?family=Love Ya Like A Sister" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="digitronAnnie.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+          <h1 class="naslov">Calculator</h1>
+          <p class="potpis">by Anisa</p>
+          
+          <input id="output">
+          
+          <div class="tipke">
+            <div class="red">
+            <button id="obrisiSve" class="pink" onclick="izbrisi()" >AC</button>
+            <button id="undoJedan" class= "pink" onclick="nazad()" >CE</button>
+            <button class="postotak" id="%" onclick="postotak()">%</button>
+            <button class="yellow" id="/" onclick="prikaziNaekran('/')">/</button>
+            </div>
+            <div class="red">
+            <button id="7" onclick="prikaziNaekran(7)">7</button>
+            <button id="8" onclick="prikaziNaekran(8)">8</button>
+            <button id="9" onclick="prikaziNaekran(9)">9</button>
+            <button class="yellow" id="*" onclick="prikaziNaekran('*')">x</button>
+            </div>
+            
+            <div class="red">
+            <button id="4" onclick="prikaziNaekran(4)">4</button>
+            <button id="5" onclick="prikaziNaekran(5)">5</button>
+            <button id="6" onclick="prikaziNaekran(6)">6</button>
+            <button class="yellow" id="-" onclick="prikaziNaekran('-')">-</button>
+            </div>
+            
+            <div class="red">
+              <button id="1" onclick="prikaziNaekran(1)">1</button>
+              <button id="2" onclick="prikaziNaekran(2)">2</button>
+              <button id="3" onclick="prikaziNaekran(3)">3</button>
+              <button class="yellow" id="+" onclick="prikaziNaekran('+')">+</button>
+            </div>
+            
+            <div class="red">
+                <button class="nula" id="0" onclick="prikaziNaekran(0)">0</button>
+                <button id="." onclick="prikaziNaekran('.')">.</button>
+                <button class="yellow" id="total" onclick="document.getElementById('output').value= eval(document.getElementById('output').value)">=</button> 
+            </div>
+          
+          
+        </div>
+      </div>
+      <div class="drip" id="one"></div><div class="drip" id="two"></div><div class="drip" id="three"></div>
+      <div class="stick"></div>
+      <div class="shadow"></div>
+      </div>
+      
+</body>
+</html>
